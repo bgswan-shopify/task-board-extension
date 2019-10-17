@@ -1,0 +1,14 @@
+{
+  "name": "Task Board Filter",
+  "version": "1.0",
+  "description": "Filters cards on a task board based on an issue.",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "all_frames": true,
+      "run_at": "document_idle",
+      "js": ["contentScript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
